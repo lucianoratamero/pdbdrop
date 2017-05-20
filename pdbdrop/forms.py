@@ -12,6 +12,7 @@ class UploadForm(forms.ModelForm):
         res_data = self.cleaned_data['res']
         if res_data and len(str(res_data)) < 3:
             raise forms.ValidationError('You need to pass at least two parameters to the res field')
+        return res_data
 
     class Meta:
         model = Upload
