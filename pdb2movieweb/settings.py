@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # here goes the user installed apps
+    'bootstrap3',
     'pdbdrop',
 ]
 
