@@ -4,6 +4,8 @@ share
 include
 lib
 pdb2movie
+uploaded_files/*
+!uploaded_files/.dummy
 local
 *.pyc
 staticfiles
