@@ -27,7 +27,7 @@ class CommaSeparatedFloatField(models.CharField):
 
 
 class Upload(models.Model):
-    file_path = models.CharField(max_length=255, null=True, blank=True)
+    file_path = models.CharField(max_length=255)
     user_email = models.EmailField()
 
     # here goes the options
