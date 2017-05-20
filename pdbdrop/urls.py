@@ -5,5 +5,5 @@ from pdbdrop.views import UploadView
 
 
 urlpatterns = [
-    url(r'^', UploadView.as_view(), name='update'),
+    url(r'^$', UploadView.as_view(), name='update'),
 ]
