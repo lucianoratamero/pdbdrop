@@ -3,6 +3,7 @@ bin
 share
 include
 lib
+pdb2movie
 local
 *.pyc
 staticfiles
