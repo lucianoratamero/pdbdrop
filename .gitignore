@@ -1,0 +1,10 @@
+venv
+bin
+include
+lib
+local
+*.pyc
+staticfiles
+.env
+pip-selfcheck.json
+*.sqlite3
