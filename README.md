@@ -1,6 +1,6 @@
 # pdbdrop
 
-This is a web application for generating simulations via web.
+pdb2movie web GUI
 
 ### developing
 
