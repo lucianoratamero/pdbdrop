@@ -1,4 +1,5 @@
 
+from django.db import transaction
 from django.contrib import messages
 from django.views.generic.edit import FormView
 from django.core.files.storage import FileSystemStorage
@@ -12,6 +13,7 @@ class UploadView(FormView):
     success_url = '/'
     template_name = 'upload.html'
 
+    @transaction.atomic
     def form_valid(self, form):
         messages.add_message(
             self.request,
