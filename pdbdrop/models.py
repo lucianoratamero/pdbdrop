@@ -10,7 +10,7 @@ class Upload(models.Model):
     # here goes the options
     keep_list = models.CharField(max_length=255, null=True, blank=True)
     waters = models.BooleanField(default=False)
-    three_d = models.BooleanField(default=False)
+    three_d = models.BooleanField(default=False, verbose_name='3D')
     combi = models.BooleanField(default=False)
     multiple = models.BooleanField(default=False)
     confs = models.IntegerField(null=True, blank=True)
