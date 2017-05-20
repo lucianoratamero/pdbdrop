@@ -1,4 +1,5 @@
 
+from django.contrib import messages
 from django.views.generic.edit import FormView
 from django.core.files.storage import FileSystemStorage
 
@@ -12,6 +13,12 @@ class UploadView(FormView):
     template_name = 'upload.html'
 
     def form_valid(self, form):
+        messages.add_message(
+            self.request,
+            messages.SUCCESS,
+            'Your files have been queued for processing successfully (WIP).'
+        )
+
         upload_model = form.save()
         uploaded_file = form.cleaned_data['upload_file']
 
